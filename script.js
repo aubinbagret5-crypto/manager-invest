@@ -107,4 +107,17 @@ function withdraw() {
   localStorage.setItem('users', JSON.stringify(users));
   alert(`Retrait effectué : ${net} FCFA après 13% d'impôt`);
   showDashboard(user);
-}
+}function showDashboardSection(section) {
+  if(section === 'home') {
+    alert("Vous êtes sur l'accueil");
+    // Ici tu peux afficher la section accueil si tu crées des sous-sections
+  }
+  else if(section === 'plan') {
+    alert("Section Plans VIP à venir");
+    // Tu peux créer une div #plan pour afficher les plans VIP
+  }
+  else if(section === 'menu') {
+    alert("Section Menu / Historique");
+    // Tu peux créer une div #menu pour historique et paramètres
+  }
+     }
