@@ -1,46 +1,22 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elite Dashboard</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+<!-- Formulaire d'inscription -->
+<div id="signup-form">
+  <input type="text" id="name" placeholder="Nom">
+  <input type="text" id="country-code" placeholder="Code Pays">
+  <input type="text" id="phone" placeholder="Numéro">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Mot de passe">
+  <button onclick="signup()">Créer un compte</button>
+</div>
 
-<body>
+<!-- Formulaire de connexion -->
+<div id="login-form">
+  <input type="text" id="login-phone" placeholder="Code Pays + Numéro">
+  <input type="password" id="login-password" placeholder="Mot de passe">
+  <button onclick="login()">Connexion</button>
+</div>
 
-<header>
-    <div class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-        <h2>Elite Capital</h2>
-    </div>
-</header>
-
-<section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1>Bienvenue sur votre Dashboard Premium</h1>
-        <p>Interface professionnelle nouvelle génération</p>
-        <button onclick="showLogin()">Accéder au compte</button>
-    </div>
-</section>
-
-<section id="login-section" class="hidden">
-    <h2>Connexion sécurisée</h2>
-    <form id="loginForm">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Mot de passe" required>
-        <button type="submit">Se connecter</button>
-        <p id="error-message"></p>
-    </form>
-</section>
-
-<section id="dashboard" class="hidden">
-    <h2>Tableau de bord</h2>
-    <canvas id="gainChart"></canvas>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
+<!-- Dashboard / Accueil -->
+<div id="dashboard" style="display:none;">
+  <h1>Bienvenue sur Manager Invest</h1>
+  <button onclick="logout()">Déconnexion</button>
+</div><script src="script.js"></script>
