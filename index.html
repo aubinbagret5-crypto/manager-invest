@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+        <h2>Elite Capital</h2>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Bienvenue sur votre Dashboard Premium</h1>
+        <p>Interface professionnelle nouvelle génération</p>
+        <button onclick="showLogin()">Accéder au compte</button>
+    </div>
+</section>
+
+<section id="login-section" class="hidden">
+    <h2>Connexion sécurisée</h2>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Mot de passe" required>
+        <button type="submit">Se connecter</button>
+        <p id="error-message"></p>
+    </form>
+</section>
+
+<section id="dashboard" class="hidden">
+    <h2>Tableau de bord</h2>
+    <canvas id="gainChart"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
