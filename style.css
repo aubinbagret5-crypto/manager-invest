@@ -1,0 +1,29 @@
+body { font-family: Arial,sans-serif; margin:0; padding:0; background:url('https://i.ibb.co/0M0zK1Q/bg-invest.jpg') no-repeat center center fixed; background-size:cover; color:white; }
+#logo { text-align:center; margin:20px; }
+#logo img { width:150px; }
+
+#signup-form,#login-form { background: rgba(0,0,0,0.7); padding:20px; margin:20px auto; border-radius:15px; max-width:400px; box-shadow:0 0 15px gold; }
+.message-gold { background-color: gold; color:#000; padding:10px; border-radius:10px; text-align:center; margin:10px 0; font-weight:bold; box-shadow:0 4px 15px rgba(0,0,0,0.5); }
+#dashboard { padding:20px; text-align:center; }
+.home-images { display:flex; justify-content:center; gap:10px; margin:20px 0; }
+.home-images img { width:30%; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.5); transition: transform 0.3s;}
+.home-images img:hover { transform:scale(1.05); }
+.plan { background: rgba(255,215,0,0.2); padding:15px; margin:10px auto; max-width:300px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.5); transition: transform 0.2s;}
+.plan:hover { transform:scale(1.05); }
+.animated-btn { background: linear-gradient(45deg,#FFD700,#FF8C00); color:white; border:none; padding:12px 25px; border-radius:10px; cursor:pointer; margin:10px; transition: all 0.3s; }
+.animated-btn:hover { transform:scale(1.05); box-shadow:0 0 10px gold; }
+#footer { position:fixed; bottom:0; width:100%; background:rgba(0,0,0,0.8); display:flex; justify-content:space-around; padding:10px 0; }
+
+#plans-table { width:95%; margin:0 auto 20px auto; border-collapse:collapse; background: rgba(0,0,0,0.6); border: 2px solid gold; border-radius:10px; overflow:hidden; box-shadow:0 0 15px gold; }
+#plans-table th, #plans-table td { padding:10px; text-align:center; border:1px solid gold; color:white; }
+#plans-table th { background: gold; color:black; }
+#plans-table td { background: rgba(255,215,0,0.1); }
+#plans-table td button { background: linear-gradient(45deg,#FFD700,#FF8C00); color:#fff; padding:8px 15px; border-radius:8px; border:none; cursor:pointer; transition: all 0.2s; }
+#plans-table td button:hover { transform:scale(1.05); box-shadow:0 0 10px gold; }
+
+#menu-section input { padding:10px; border-radius:8px; border:none; margin:5px; width:90%; display:block; margin:auto; text-align:center; }
+#menu-section button { background: linear-gradient(45deg,#FFD700,#FF8C00); color:#fff; padding:10px 20px; border-radius:8px; border:none; cursor:pointer; transition: all 0.2s; margin-top:10px; display:block; margin:auto; }
+#menu-section button:hover { transform:scale(1.05); box-shadow:0 0 10px gold; }
+
+.back-btn { background: linear-gradient(45deg,#FFD700,#FF8C00); color: #fff; padding: 8px 20px; border-radius: 8px; border: none; cursor: pointer; margin-bottom: 15px; display: inline-block; transition: all 0.2s; }
+.back-btn:hover { transform:scale(1.05); box-shadow:0 0 10px gold; }
