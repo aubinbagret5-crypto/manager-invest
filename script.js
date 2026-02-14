@@ -121,3 +121,7 @@ function withdraw() {
     // Tu peux créer une div #menu pour historique et paramètres
   }
      }
+function showLoginForm() {
+  document.getElementById('signup-form').style.display = 'none';
+  document.getElementById('login-form').style.display = 'block';
+}
